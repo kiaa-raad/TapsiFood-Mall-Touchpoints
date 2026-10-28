@@ -659,3 +659,63 @@ dialog button {
     color: #242120;
   }
 }
+
+/* Proposed passenger station and its wayfinding family. */
+.design-status {
+  color: var(--muted);
+  font-size: 14px;
+}
+.design-status .badge {
+  margin-inline-end: 10px;
+}
+.proposed-design {
+  margin: 24px 0;
+}
+.proposed-design .picture {
+  height: auto;
+  padding: 0;
+  background: #f4efec;
+}
+.proposed-design .picture img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.proposed-design figcaption {
+  padding: 20px 24px;
+}
+.proposed-design figcaption h3 {
+  margin: 0 0 8px;
+  color: var(--ink);
+  font-size: 21px;
+}
+.proposed-design figcaption p {
+  margin-bottom: 0;
+}
+.proposal-signage-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.proposal-signage-grid .proposed-design {
+  margin: 0;
+}
+.proposal-signage-grid .proposed-design:first-child {
+  grid-column: 1 / -1;
+}
+@media (max-width: 640px) {
+  .proposal-signage-grid {
+    grid-template-columns: 1fr;
+  }
+  .proposed-design figcaption {
+    padding: 16px;
+  }
+}
+@media print {
+  .proposed-design .picture {
+    height: auto;
+  }
+  .proposed-design .picture img {
+    max-height: 340px;
+  }
+}
