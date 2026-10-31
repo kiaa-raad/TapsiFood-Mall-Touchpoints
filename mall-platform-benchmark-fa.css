@@ -700,9 +700,6 @@ dialog button {
 .proposal-signage-grid .proposed-design {
   margin: 0;
 }
-.proposal-signage-grid .proposed-design:first-child {
-  grid-column: 1 / -1;
-}
 @media (max-width: 640px) {
   .proposal-signage-grid {
     grid-template-columns: 1fr;
