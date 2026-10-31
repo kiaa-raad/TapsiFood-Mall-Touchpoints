@@ -36,7 +36,7 @@ window.addEventListener("hashchange", () => {
 });
 document
   .querySelector(".brand")
-  .addEventListener("click", () => setView("designs"));
+  .addEventListener("click", () => setView("research"));
 filters.forEach((button) => {
   button.addEventListener("click", () => {
     const filter = button.dataset.filter;
@@ -52,7 +52,7 @@ filters.forEach((button) => {
         .length.toLocaleString("fa-IR") + " نمونه";
   });
 });
-setView(location.hash === "#research" ? "research" : "designs", false);
+setView(location.hash === "#designs" ? "designs" : "research", false);
 
 const dialog = document.getElementById("zoom");
 const zoomImage = dialog.querySelector(".lightbox-image img");
